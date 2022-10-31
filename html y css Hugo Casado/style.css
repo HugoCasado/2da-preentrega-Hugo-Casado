@@ -1,13 +1,6 @@
 .index {
     background-color: rgb(231, 208, 180);
 }
-.arriba {
-    color: blue;
-    border: 1px solid black;
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-}
 
 h1 {
     color: brown;
@@ -24,6 +17,7 @@ h1 {
     position: absolute;
     top: 60px;
     left: 450px;
+    
 }
 
 .carniceria {
@@ -31,6 +25,7 @@ h1 {
     position: absolute;
     top: 100px;
     left: 600px;
+    border-radius: 5%;
 }
 
 ul {
@@ -51,6 +46,7 @@ h2 {
     position: absolute;
     top: 75px;
     left: 400px;
+    border-radius: 5%;
 }
 
 .uno,
@@ -65,7 +61,14 @@ h2 {
     position: absolute;
     top: 350px;
     left: 500px;
+    border-radius: 5%;
+    transition: all 5ms;
 
+}
+.vacuno:hover {
+    transform: scale(1.5) translateX(50px);
+    transition: all 3s;
+    
 }
 
 .aves {
@@ -73,6 +76,11 @@ h2 {
     position: absolute;
     top: 550px;
     left: 500px;
+    border-radius: 5%;
+}
+.aves:hover{
+    transform: scale(1.5) translateX(50px);
+    transition: all 3s;
 }
 
 .embutidos {
@@ -80,6 +88,11 @@ h2 {
     position: absolute;
     top: 800px;
     left: 500px;
+    border-radius: 5%;
+}
+.embutidos:hover{
+    transform: scale(1.5) translateX(50px);
+    transition: all 3s;
 }
 
 .panificados {
@@ -87,6 +100,11 @@ h2 {
     position: absolute;
     top: 1050px;
     left: 500px;
+    border-radius: 5%;
+}
+.panificados:hover{
+    transform: scale(1.5) translateX(50px);
+    transition: all 3s;
 }
 
 h3 {
@@ -96,7 +114,7 @@ h3 {
 }
 
 .empresa {
-    width: 150px;
+    width: 100px;
     position: absolute;
     top: 80px;
     left: 200px;
@@ -120,28 +138,28 @@ h4 {
 .whatsapp {
     width: 50px;
     position: absolute;
-    top: 150px;
+    top: 100px;
     left: 200px;
 }
 
 .facebook {
     width: 50px;
     position: absolute;
-    top: 370px;
+    top: 340px;
     left: 220px;
 }
 
 .direccion {
     width: 50px;
     position: absolute;
-    top: 620px;
+    top: 590px;
     left: 350px;
 }
 
 .ubicacion {
     width: 50px;
     position: absolute;
-    top: 850px;
+    top: 820px;
     left: 180px;
 }
 
@@ -150,4 +168,9 @@ h4 {
     position: absolute;
     top: 740px;
     left: 300px;
+    
+}
+.mapa:hover{
+    transform: scale(1.2) translateX(100px) translateY(-100px);
+    transition: all 3s;
 }
