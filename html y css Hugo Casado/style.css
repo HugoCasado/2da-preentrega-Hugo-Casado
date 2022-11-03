@@ -1,3 +1,4 @@
+/*inicio index*/
 .index {
     background-color: rgb(231, 208, 180);
 }
@@ -5,10 +6,11 @@
 h1 {
     color: brown;
     font-size: 35px;
+    text-decoration: underline;
 }
 
 .largo {
-    border: 1px solid white;
+    
     width: 30%;
 }
 
@@ -16,37 +18,53 @@ h1 {
     width: 100px;
     position: absolute;
     top: 60px;
-    left: 450px;
-    
+    left: 480px;
+    border-radius: 50%;
+}
+
+.logo:hover {
+    transform: rotate(360deg);
+    transition: all 5s;
 }
 
 .carniceria {
     width: 400px;
     position: absolute;
     top: 100px;
-    left: 600px;
+    left: 650px;
     border-radius: 5%;
+
+}
+
+.carniceria:hover {
+    transform: scale(1.1) translateX(-30px);
+    transition: all 3s;
+
 }
 
 ul {
     font-size: 25px;
 }
 
+/*inicio productos*/
+
 h2 {
     color: brown;
     border: 1px solid wheat;
-    width: 15%;
+    width: 30%;
     font-size: 30px;
     padding-bottom: 200px;
     display: block;
+    text-decoration: underline;
 }
 
 .producto {
     width: 400px;
     position: absolute;
     top: 75px;
-    left: 400px;
+    left: 500px;
     border-radius: 5%;
+    border: 1px solid black;
 }
 
 .uno,
@@ -59,80 +77,103 @@ h2 {
 .vacuno {
     width: 200px;
     position: absolute;
-    top: 350px;
+    top: 370px;
     left: 500px;
     border-radius: 5%;
     transition: all 5ms;
 
 }
+
 .vacuno:hover {
     transform: scale(1.5) translateX(50px);
     transition: all 3s;
-    
+    animation: animacion 4s;
+
 }
 
 .aves {
     width: 200px;
     position: absolute;
-    top: 550px;
+    top: 680px;
     left: 500px;
     border-radius: 5%;
 }
-.aves:hover{
+
+.aves:hover {
     transform: scale(1.5) translateX(50px);
     transition: all 3s;
+    animation: animacion 4s;
 }
 
 .embutidos {
     width: 200px;
     position: absolute;
-    top: 800px;
+    top: 980px;
     left: 500px;
     border-radius: 5%;
 }
-.embutidos:hover{
+
+.embutidos:hover {
     transform: scale(1.5) translateX(50px);
     transition: all 3s;
+    animation: animacion 4s;
 }
 
 .panificados {
     width: 200px;
     position: absolute;
-    top: 1050px;
+    top: 1220px;
     left: 500px;
     border-radius: 5%;
 }
-.panificados:hover{
+
+.panificados:hover {
     transform: scale(1.5) translateX(50px);
     transition: all 3s;
+    animation: animacion 4s;
 }
 
+
+/*inicio la empresa*/
 h3 {
     color: brown;
     font-size: 28px;
     padding-bottom: 100px;
+    text-decoration: underline;
 }
 
 .empresa {
     width: 100px;
     position: absolute;
-    top: 80px;
-    left: 200px;
+    top: 60px;
+    left: 160px;
+    border-radius: 50%;
+}
+
+.empresa:hover {
+    transform: rotate(360deg);
+    transition: all 5s;
+
 }
 
 p {
     font-size: 25px;
+    background-color: rgb(234, 193, 144);
 }
 
+/*inicio contacto*/
 h4 {
     color: brown;
     font-size: 27px;
+    text-decoration: underline;
 }
 
 .cinco,
 .seis,
-.siete {
+.siete,
+.ocho {
     padding-bottom: 200px;
+    text-decoration: underline;
 }
 
 .whatsapp {
@@ -142,11 +183,21 @@ h4 {
     left: 200px;
 }
 
+.whatsapp:hover {
+    transform: scale(1.5) translateX(50px);
+    transition: all 3s ease;
+}
+
 .facebook {
     width: 50px;
     position: absolute;
     top: 340px;
     left: 220px;
+}
+
+.facebook:hover {
+    transform: scale(1.5) translateX(50px);
+    transition: all 3s ease;
 }
 
 .direccion {
@@ -156,11 +207,21 @@ h4 {
     left: 350px;
 }
 
+.direccion:hover {
+    transform: scale(1.5) translateX(50px);
+    transition: all 3s ease;
+}
+
 .ubicacion {
     width: 50px;
     position: absolute;
-    top: 820px;
-    left: 180px;
+    top: 830px;
+    left: 150px;
+}
+
+.ubicacion:hover {
+    transform: scale(1.5) translateX(30px);
+    transition: all 3s ease;
 }
 
 .mapa {
@@ -168,9 +229,113 @@ h4 {
     position: absolute;
     top: 740px;
     left: 300px;
-    
+
 }
-.mapa:hover{
-    transform: scale(1.2) translateX(100px) translateY(-100px);
+
+.mapa:hover {
+    transform: scale(1.2) translateX(100px) translateY(-50px);
     transition: all 3s;
+}
+@keyframes animacion {
+    50% {
+        border-radius: 50%;
+    }
+}
+
+/* mobile*/
+@media only screen and (max-width: 500px) {
+    .responsive {
+        margin: 0px;
+        width: 100px;
+    }
+}
+
+/* tablet*/
+@media only screen and (min-width: 501px) and (max-width: 980px) {
+    .responsive {
+        margin: 0px;
+        width: 150px;
+        
+    }
+}
+
+/*desktop*/
+@media only screen and (min-width: 981px) {
+    .responsive {
+        margin: 0px;
+        width: 200px;
+    }
+}
+
+/* mobile*/
+@media only screen and (max-width: 500px) {
+    .responsive2 {
+        margin: 0px;
+        width: 50px;
+    }
+}
+
+/* tablet*/
+@media only screen and (min-width: 501px) and (max-width: 980px) {
+    .responsive2 {
+        margin: 0px;
+        width: 70px;
+        
+    }
+}
+
+/*desktop*/
+@media only screen and (min-width: 981px) {
+    .responsive2 {
+        margin: 0px;
+        width: 100px;
+    }
+}
+
+/* mobile*/
+@media only screen and (max-width: 500px) {
+    .responsive3 {
+        margin: 0px;
+        width: 150px;
+    }
+}
+
+/* tablet*/
+@media only screen and (min-width: 501px) and (max-width: 980px) {
+    .responsive3 {
+        margin: 0px;
+        width: 200px;
+        
+    }
+}
+
+/*desktop*/
+@media only screen and (min-width: 981px) {
+    .responsive3 {
+        margin: 0px;
+        width: 400px;
+    }
+}
+
+/* mobile*/
+@media only screen and (max-width: 500px) {
+    .responsive4 {
+        font-size: 10px;
+    }
+}
+
+/* tablet*/
+@media only screen and (min-width: 501px) and (max-width: 980px) {
+    .responsive4 {
+        font-size: 15px;
+        
+    }
+}
+
+/*desktop*/
+@media only screen and (min-width: 981px) {
+    .responsive4 {
+        font-size: 25px;
+    
+    }
 }
